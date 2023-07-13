@@ -1,0 +1,65 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Movie-wrapper {
+  width: 500;
+  padding: 10px;
+  color: black;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+}
+
+.Movie-image {
+  width: 100%;
+  max-width: 500px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.Movie-title {
+  font-size: 1.15rem;
+  margin: 5px 0;
+  font-weight: bolder;
+}
+
+.Movie-date {
+  font-size: 0.875rem;
+  margin: 2px 0;
+  font-weight: 500;
+}
+
+.Movie-rate {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.Movie-search {
+  height: 48px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  padding: 8px 25px;
+  font-weight: bold;
+  width: 475px;
+}
