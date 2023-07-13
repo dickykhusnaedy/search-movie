@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-import "../App.css";
-import { getMovieList, searchMovie } from "../config/Api";
+import "./assets/App.css";
+import { getMovieList, searchMovie } from "./config/Api";
 import { useState } from "react";
 import moment from "moment";
+import { Loading } from "./components/atoms/Loading";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -41,7 +42,7 @@ const App = () => {
     <>
       <h1>Dicky Movie</h1>
       <input placeholder="Cari film kesayangan" className="Movie-search" onChange={({ target }) => search(target.value)} />
-      <div className="Movie-container">{loading ? "load data" : popularMovies.length == 0 ? "Data tidak ditemukan" : <PopularMovieList />}</div>
+      <div className="Movie-container">{loading ? <Loading /> : popularMovies.length == 0 ? "Data tidak ditemukan" : <PopularMovieList />}</div>
     </>
   );
 };
