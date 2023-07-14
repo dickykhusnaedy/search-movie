@@ -1,3 +1,3 @@
-import useDebounce from "./hooks";
+import useDebounce from "./Hooks";
 
 export { useDebounce };
