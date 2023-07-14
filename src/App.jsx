@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <>
-      <h1>Search Movie</h1>
+      <h1>Dicky Search Movie</h1>
       <input placeholder="Cari film kesayangan" className="Movie-search" onChange={({ target }) => setSearchValue(target.value)} />
       <div className="Movie-container">
         <CardMovieList search={debouceSearchValue} />
